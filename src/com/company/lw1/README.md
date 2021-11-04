@@ -1,8 +1,12 @@
 # Отчёт по лабораторной работе №1 «Знакомство с языком программирования Java»
 
 ***УрФУ ИРИТ-РФТ  
-Группа РИЗ-200016у  
-Кулаков Максим Иванович***
+В рамках изучения дисциплины  
+«Программирование на Java»  
+Студента группы РИЗ-200016у  
+Кулакова Максима Ивановича***
+
+***Преподаватель Архипов Николай Александрович***
 
 ## Цель работы
 Получение представления о написании программы на языке
@@ -11,6 +15,8 @@
 ## Описание задачи
 - Изучение справочных материалов;
 - Изучение примеров;
+- Изучение команд, для компиляции и запуска программы 
+  написанной на Java, с помощью командной строки и утилит `javac`, `java`;
 - Решение задач на программирование, которые затрагивают такие темы как:
   - ввод/вывод с консоли,
   - переменные, 
@@ -161,14 +167,14 @@ import java.util.Scanner;
 public class Example1 {
     public static void main(String[] args) {
         var input = new Scanner(System.in);
-        String first_name, last_name, middle_name;
+        String firstName, lastName, middleName;
 
         System.out.print("Введите последовательно ФИО: ");
-        last_name = input.next();
-        first_name = input.next();
-        middle_name = input.next();
+        lastName = input.next();
+        firstName = input.next();
+        middleName = input.next();
 
-        System.out.printf("Hello %s %s %s\n\r", last_name, first_name, middle_name);
+        System.out.printf("Hello %s %s %s\n\r", lastName, firstName, middleName);
     }
 }
 ```
@@ -222,19 +228,19 @@ import java.util.Scanner;
 
 public class Example3 {
     public static void main(String[] args) {
-        String day_type, month;
-        int day_number;
+        String dayType, month;
+        int dayNumber;
         var input = new Scanner(System.in);
 
         System.out.print("Введите последовательно день недели, месяц, число: ");
-        day_type = input.next();
+        dayType = input.next();
         month = input.next();
-        day_number = input.nextInt();
+        dayNumber = input.nextInt();
 
         System.out.println("\n\rИтого, вы ввели:");
-        System.out.println("\tДень недели: " + day_type);
+        System.out.println("\tДень недели: " + dayType);
         System.out.println("\tМесяц: " + month);
-        System.out.println("\tЧисло: " + day_number);
+        System.out.println("\tЧисло: " + dayNumber);
     }
 }
 ```
@@ -290,12 +296,12 @@ import java.util.Scanner;
 public class Example5 {
     public static void main(String[] args) {
         var input = new Scanner(System.in);
-        int year, year_now = Calendar.getInstance().get(Calendar.YEAR);
+        int year, yearNow = Calendar.getInstance().get(Calendar.YEAR);
 
         System.out.print("Введите год вашего рождения: ");
         year = input.nextInt();
 
-        System.out.println("Вам сейчас " + (year_now - year)+ ".");
+        System.out.println("Вам сейчас " + (yearNow - year)+ ".");
     }
 }
 ```
@@ -318,7 +324,7 @@ import java.util.Scanner;
 public class Example6 {
     public static void main(String[] args) {
         var input = new Scanner(System.in);
-        int year, now_year = Calendar.getInstance().get(Calendar.YEAR);
+        int year, yearNow = Calendar.getInstance().get(Calendar.YEAR);
         String name;
 
         System.out.print("Введите ваше имя и год рождения: ");
@@ -326,7 +332,7 @@ public class Example6 {
         year = input.nextInt();
 
         System.out.println("Ваше имя: " + name);
-        System.out.println("Вам сейчас : " + (now_year - year));
+        System.out.println("Вам сейчас : " + (yearNow - year));
     }
 }
 ```

@@ -4,18 +4,18 @@ import java.util.Scanner;
 
 public class Example3 {
     public static void main(String[] args) {
-        String day_type, month;
-        int day_number;
+        String dayType, month;
+        int dayNumber;
         var input = new Scanner(System.in);
 
         System.out.print("Введите последовательно день недели, месяц, число: ");
-        day_type = input.next();
+        dayType = input.next();
         month = input.next();
-        day_number = input.nextInt();
+        dayNumber = input.nextInt();
 
         System.out.println("\n\rИтого, вы ввели:");
-        System.out.println("\tДень недели: " + day_type);
+        System.out.println("\tДень недели: " + dayType);
         System.out.println("\tМесяц: " + month);
-        System.out.println("\tЧисло: " + day_number);
+        System.out.println("\tЧисло: " + dayNumber);
     }
 }

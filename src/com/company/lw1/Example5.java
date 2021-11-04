@@ -6,11 +6,11 @@ import java.util.Scanner;
 public class Example5 {
     public static void main(String[] args) {
         var input = new Scanner(System.in);
-        int year, year_now = Calendar.getInstance().get(Calendar.YEAR);
+        int year, yearNow = Calendar.getInstance().get(Calendar.YEAR);
 
         System.out.print("Введите год вашего рождения: ");
         year = input.nextInt();
 
-        System.out.println("Вам сейчас " + (year_now - year)+ ".");
+        System.out.println("Вам сейчас " + (yearNow - year)+ ".");
     }
 }

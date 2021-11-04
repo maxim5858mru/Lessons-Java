@@ -1,15 +1,17 @@
 package com.company;
 
 import com.company.lw1.LW1;
+import com.company.lw2.LW2;
 
 import java.util.Scanner;
 
 public class Main {
-    // TODO: Сделать отчёт в README.md
+    // TODO: Заполнить README.md проекта
     public static void main(String[] args) {
         int[] examples = new int[0];
 
         LW1.main(examples);
+        LW2.main(examples);
 
         // TODO: Выбор заданий с помощью консоли
         // TODO: Выбор заданий с помощью аргументов args[]
