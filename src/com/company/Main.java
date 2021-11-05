@@ -2,6 +2,7 @@ package com.company;
 
 import com.company.lw1.LW1;
 import com.company.lw2.LW2;
+import com.company.lw3.LW3;
 
 import java.util.Scanner;
 
@@ -10,8 +11,14 @@ public class Main {
     public static void main(String[] args) {
         int[] examples = new int[0];
 
+        System.out.println("ЛАБОРАТОРНАЯ РАБОТА №1");
         LW1.main(examples);
+
+        System.out.println("ЛАБОРАТОРНАЯ РАБОТА №2");
         LW2.main(examples);
+
+        System.out.println("ЛАБОРАТОРНАЯ РАБОТА №3");
+        LW3.main(examples);
 
         // TODO: Выбор заданий с помощью консоли
         // TODO: Выбор заданий с помощью аргументов args[]
