@@ -15,11 +15,15 @@
 - Изучение справочных материалов;
 - Укрепление навыков работы с массивами и операторами цикла;
 - Решение задач на программирование, по следующим темам:
-  - работа с операторами;
-  - 
+  - работа с операторами цикла,
+  - работа с многомерными массивами,
+  - работа с зубчатыми массивами,
+  - обработка ошибок;
+- Оформление отчёта по лабораторной работе.
 
 ## Ход работы
-_
+В ходе работы было решено 9 задач по программированию. Листинг кода
+написанных программ представлен ниже.
 
 #### Задание №1
 Напишите программу, которая выводить в консольное окно
@@ -673,72 +677,72 @@ public class Example7 {
 import java.util.Scanner;
 
 public class Example8 {
-    public static void main(String[] args) {
-        var input = new Scanner(System.in);
-        char[] text;
-        int key;
+  public static void main(String[] args) {
+    var input = new Scanner(System.in);
+    char[] text;
+    int key;
 
-        // 1 часть: шифрование сообщения
-        System.out.print("Введите текст для шифрования: ");
-        text = input.nextLine().toCharArray();
+    // 1 часть: шифрование сообщения
+    System.out.print("Введите текст для шифрования: ");
+    text = input.nextLine().toCharArray();
 
-        System.out.print("Введите ключ: ");
-        key = input.nextInt();
+    System.out.print("Введите ключ: ");
+    key = input.nextInt();
+    input.nextLine();
 
-        encrypt(text, key);
-        System.out.println("Текст после преобразования: '" + new String(text) + "'");
-        System.out.println();
+    encrypt(text, key);
+    System.out.println("Текст после преобразования: '" + new String(text) + "'");
 
-        // 2 часть: расшифровка сообщения
-        while (true) {
-            System.out.print("Выполнить обратное преобразование? (y/n) ");
-            String answer = input.next();
+    // 2 часть: расшифровка сообщения
+    while (true) {
+      System.out.print("Выполнить обратное преобразование? (y/n) ");
+      String answer = input.nextLine();
 
-            if (answer.equals("y"))
-                break;
-            else if (answer.equals("n")) {
-                System.out.println("До свидания!");
-                return;
-            }
-            else
-                System.err.println("Введите корректный ответ");
-        }
-
-        System.out.print("Введите текст для расшифровки: ");
-        text = input.nextLine().toCharArray();
-
-        System.out.print("Введите ключ: ");
-        key = input.nextInt();
-        input.nextLine();
-
-        decrypt(text, key);
-        System.out.println("Текст после преобразования: '" + new String(text) + "'");
+      if (answer.equals("y"))
+        break;
+      else if (answer.equals("n")) {
+        System.out.println("До свидания!");
+        return;
+      }
+      else
+        System.err.println("Введите корректный ответ");
     }
 
-    /**
-     * Шифрование строки с помощью метода шифрования "Шифр Цезаря",
-     * точнее шифрование массива символов.
-     *
-     * Результат функции представлен в массиве text.
-     * @param text Массив символов.
-     * @param key Ключ шифрования.
-     */
-    private static void encrypt(char[] text, int key) {
-        for (int i = 0; i < text.length; i++) {
-            text[i] = (char) (text[i] + key);
-        }
-    }
+    System.out.print("Введите текст для расшифровки: ");
+    text = input.nextLine().toCharArray();
 
-    /**
-     * Дешифрование строки с зашифрованной с помощью "Шифра Цезаря".
-     * @param text Массив символов.
-     * @param key Ключ расшифровки.
-     */
-    private static void decrypt(char[] text, int key) {
-        for (int i = 0; i < text.length; i++) {
-            text[i] = (char) (text[i] - key);
-        }
+    System.out.print("Введите ключ: ");
+    key = input.nextInt();
+    input.nextLine();
+
+    decrypt(text, key);
+    System.out.println("Текст после преобразования: '" + new String(text) + "'");
+  }
+
+  /**
+   * Шифрование строки с помощью метода шифрования "Шифр Цезаря",
+   * точнее шифрование массива символов.
+   *
+   * Результат функции представлен в массиве text.
+   * @param text Массив символов.
+   * @param key Ключ шифрования.
+   */
+  private static void encrypt(char[] text, int key) {
+    for (int i = 0; i < text.length; i++) {
+      text[i] = (char) (text[i] + key);
     }
+  }
+
+  /**
+   * Дешифрование строки с зашифрованной с помощью "Шифра Цезаря".
+   * @param text Массив символов.
+   * @param key Ключ расшифровки.
+   */
+  private static void decrypt(char[] text, int key) {
+    for (int i = 0; i < text.length; i++) {
+      text[i] = (char) (text[i] - key);
+    }
+  }
 }
 ```
 
@@ -876,4 +880,10 @@ public class Example9 {
 ```
 
 ## Вывод
-_
+В ходе лабораторной работы были закреплены навыки работы с операторами
+цикла и с многомерными массивами.
+
+В рамках лабораторной работы №4 было решено 8 обязательных задач и
+дополнительная девятая задача. Листинг кода написанных программ был
+представлен в разделе *Ход работы*. В результате лабораторной работы 
+можно сказать, что цель была достигнута, а поставленные задачи выполнены.
