@@ -5,6 +5,7 @@ import com.company.lw2.LW2;
 import com.company.lw3.LW3;
 import com.company.lw4.LW4;
 import com.company.lw5.LW5;
+import com.company.lw6.LW6;
 
 import java.util.Scanner;
 
@@ -25,21 +26,13 @@ public class Main {
         System.out.println("ЛАБОРАТОРНАЯ РАБОТА №4");
         LW4.main(examples);
 
-        System.out.println("ЛАБОРАТОРНАЯ РАБОТА №4");
+        System.out.println("ЛАБОРАТОРНАЯ РАБОТА №5");
         LW5.main(examples);
+
+        System.out.println("ЛАБОРАТОРНАЯ РАБОТА №6");
+        LW6.main(examples);
 
         // TODO: Выбор заданий с помощью консоли
         // TODO: Выбор заданий с помощью аргументов args[]
-/*        var input = new Scanner(System.in);
-        int work_number;
-        int[] examples = new int[0];
-
-        System.out.print("Номер лабораторной работы: ");
-        work_number = input.nextInt();
-
-        System.out.print("Введите номера заданий: ");
-        for (int item = 0; item < 0;) {
-
-        }*/
     }
 }
