@@ -1,7 +1,7 @@
 package com.company.lw6;
 
 public class LW6 {
-        public static void main(int[] args) {
+    public static void main(int[] args) {
         if (args.length == 0)
             args = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
