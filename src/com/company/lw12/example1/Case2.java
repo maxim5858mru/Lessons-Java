@@ -1,13 +1,13 @@
-package com.company.lw11.example1;
+package com.company.lw12.example1;
 
 import java.io.*;
 
 /**
- * ПРИМЕР №7
+ * ПРИМЕР №2
  * Чтение из одного файла и запись в другой файл данных
  * построчно с использованием буфера в 1 килобайт.
  */
-public class Case7 {
+public class Case2 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = null;
         BufferedWriter bw = null;

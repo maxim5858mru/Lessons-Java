@@ -1,14 +1,14 @@
-package com.company.lw11.example1;
+package com.company.lw12.example1;
 
 import java.io.*;
 
 /**
- * ПРИМЕР №9
+ * ПРИМЕР №4
  * Чтение из одного файла и запись в другой файл данных
  * построчно с использованием буферизации символьных потоков основанных на
  * байтовых файловых потоках.
  */
-public class Case9 {
+public class Case4 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = null;
         BufferedWriter bw = null;

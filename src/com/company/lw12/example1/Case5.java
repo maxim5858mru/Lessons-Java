@@ -1,13 +1,13 @@
-package com.company.lw11.example1;
+package com.company.lw12.example1;
 
 import java.io.*;
 
 /**
- * ПРИМЕР №10
+ * ПРИМЕР №5
  * Выполнить чтение из одного файла и запись в другой
  * файл с использованием класса PrintWriter
  */
-public class Case10 {
+public class Case5 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = null;
         PrintWriter out = null;
