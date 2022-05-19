@@ -294,7 +294,7 @@ for (var item : list) {
 ```java
 Iterator listIterator = list.iterator();
 
-while (listIterator.hasNext()) {
+while(listIterator.hasNext()) {
     System.out.println(listIterator.next()); 
 }
 ```
@@ -302,17 +302,13 @@ while (listIterator.hasNext()) {
 ```java
 ListIterator listIterator = list.listIterator();
 
-while (listIterator.hasPrevious()) {
+while(listIterator.hasPrevious()) {
     System.out.println(listIterator.previous());
 }
 
-while (listIterator.hasNext()) {
+while(listIterator.hasNext()) {
     System.out.println(listIterator.next());
 }
-```
-4. С помощью `forEach()`:
-```java
-list.forEach(System.out::println);
 ```
 
 ## Вывод
